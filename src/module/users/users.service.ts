@@ -8,7 +8,7 @@ import { UpdateUserDto } from './dto/update-user.dto';
 
 import { PrismaService } from 'src/module/prisma/prisma.service'; // Import PrismaService
 import { Prisma } from '@prisma/client'; // Import Prisma types
-import { hashPassword } from 'src/utils/bcrypt';
+import { hashPassword } from '../../utils/bcrypt';
 
 @Injectable()
 export class UsersService {

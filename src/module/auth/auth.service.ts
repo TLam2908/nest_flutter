@@ -7,8 +7,8 @@ import { UsersService } from '../users/users.service';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
 
-import { hashPassword } from 'src/utils/bcrypt'; // Import utility function to hash passwords
-import { comparePassword } from 'src/utils/bcrypt';
+import { hashPassword } from '../../utils/bcrypt'; // Import utility function to hash passwords
+import { comparePassword } from '../../utils/bcrypt'; // Import utility function to compare passwords
 
 @Injectable()
 export class AuthService {
