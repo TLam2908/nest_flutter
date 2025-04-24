@@ -22,8 +22,12 @@ model users {
 }
 
 model todos {
-  id       Int     @id @default(autoincrement())
-  title    String
+  id    Int    @id @default(autoincrement())
+  title String
 }
 
-
+model posts {
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+}

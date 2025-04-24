@@ -9,9 +9,10 @@ import { UsersModule } from './module/users/users.module';
 import { UsersController } from './module/users/users.controller';
 import { AuthModule } from './module/auth/auth.module';
 import { TodosModule } from './module/todos/todos.module';
+import { PostModule } from './module/post/post.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), PrismaModule, UsersModule, AuthModule, TodosModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), PrismaModule, UsersModule, AuthModule, TodosModule, PostModule],
   controllers: [AppController, UsersController],
   providers: [AppService],
 })
